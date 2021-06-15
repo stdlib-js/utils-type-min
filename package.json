@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-type-min",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Return the minimum value of a specified numeric type.",
   "license": "Apache-2.0",
   "author": {
