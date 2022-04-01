@@ -1,0 +1,40 @@
+{
+  "name": "@stdlib/utils-type-min",
+  "version": "0.0.0",
+  "description": "Return the minimum value of a specified numeric type.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-type-min.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "mathematics",
+    "math",
+    "type",
+    "min",
+    "minimum",
+    "value",
+    "smallest",
+    "least",
+    "typemin",
+    "float",
+    "integer",
+    "int"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
