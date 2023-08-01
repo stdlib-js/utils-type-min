@@ -34,25 +34,120 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/utils-type-min
+```
 
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var typemin = require( '@stdlib/utils-type-min' );
+```
+
+#### typemin( dtype )
+
+Returns the minimum value of a specified numeric type.
+
+```javascript
+var m = typemin( 'int8' );
+// returns -128
+```
+
+The following numeric types are supported:
+
+-   `float64`: double-precision floating-point numbers
+-   `float32`: single-precision floating-point numbers
+-   `float16`: half-precision floating-point numbers
+-   `int32`: 32-bit two's complement signed integers
+-   `uint32`: 32-bit unsigned integers
+-   `int16`: 16-bit two's complement signed integers
+-   `uint16`: 16-bit unsigned integers
+-   `int8`: 8-bit two's complement signed integers
+-   `uint8`: 8-bit unsigned integers
+-   `uint8c`: 8-bit unsigned integers clamped to `0-255`
+
+</section>
+
+<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
+<section class="notes">
 
+</section>
+
+<!-- /.notes -->
 
 <!-- Package usage examples. -->
 
+<section class="examples">
 
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var typemin = require( '@stdlib/utils-type-min' );
+
+var m = typemin( 'float64' );
+// returns -Infinity
+
+m = typemin( 'float32' );
+// returns -Infinity
+
+m = typemin( 'float16' );
+// returns -Infinity
+
+m = typemin( 'int32' );
+// returns -2147483648
+
+m = typemin( 'uint32' );
+// returns 0
+
+m = typemin( 'int16' );
+// returns -32768
+
+m = typemin( 'uint16' );
+// returns 0
+
+m = typemin( 'int8' );
+// returns -128
+
+m = typemin( 'uint8' );
+// returns 0
+
+m = typemin( 'uint8c' );
+// returns 0
+```
+
+</section>
+
+<!-- /.examples -->
 
 <!-- Section for describing a command-line interface. -->
 
-
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -70,7 +165,7 @@ npm install -g @stdlib/utils-type-min-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: typemin [options] <dtype>
@@ -97,7 +192,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ typemin int16
@@ -124,9 +219,10 @@ $ typemin int16
 
 <section class="related">
 
+* * *
+
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils-type-min`][@stdlib/utils-type-min]</span><span class="delimiter">: </span><span class="description">return the minimum value of a specified numeric type.</span>
 -   <span class="package-name">[`@stdlib/utils-real-min`][@stdlib/utils/real-min]</span><span class="delimiter">: </span><span class="description">return the smallest positive normal value capable of being represented by a numeric real type.</span>
 -   <span class="package-name">[`@stdlib/utils-type-max`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 
@@ -147,7 +243,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -170,8 +266,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/utils-type-min-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/utils-type-min-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/utils-type-min.svg
+[npm-url]: https://npmjs.org/package/@stdlib/utils-type-min
 
 [test-image]: https://github.com/stdlib-js/utils-type-min/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/utils-type-min/actions/workflows/test.yml?query=branch:main
