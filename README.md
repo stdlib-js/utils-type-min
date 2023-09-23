@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import typemin from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@esm/index.mjs';
+import typemin from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@v0.1.0-esm/index.mjs';
 ```
 
 #### typemin( dtype )
@@ -103,7 +103,7 @@ The following numeric types are supported:
 <body>
 <script type="module">
 
-import typemin from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@esm/index.mjs';
+import typemin from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@v0.1.0-esm/index.mjs';
 
 var m = typemin( 'float64' );
 // returns -Infinity
