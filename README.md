@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-typemin = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@umd/browser.js' )
+typemin = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var typemin = require( 'path/to/vendor/umd/utils-type-min/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -125,7 +125,7 @@ The following numeric types are supported:
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-type-min@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
